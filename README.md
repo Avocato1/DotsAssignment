@@ -7,10 +7,11 @@ Shoot: LMB
 
 Optimization
 
-The systems work by processing only entities with specific components. BurstCompile is used to make the code run faster. References are cached where possible to improve performance. A consistent naming convention is followed for authors and systems.
+The systems are made to efficiently handle only the enteties that need processing by targeting specific components. BurstCompile is used to speed up the code execution. I've also cached references to avoid unnecessary recalculations and followed a consistent naming pattern for better organization
 
 Unity
 
-In the engine, select the "MainScene" adn enable the subscene if disabled.
+In Unity, open the "MainScene" and enable the subscene if it is currently disabled.
 
+The spawner will spawn objects above the player at a random X position within a specified range. I also adjusted the projectile movement so that its direction can be changed, allowing it to be used for enemy movement as well.
 
